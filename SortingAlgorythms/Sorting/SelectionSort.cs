@@ -1,8 +1,8 @@
 ﻿namespace SortingAlgorythms;
 
-public class SelectionSort : BaseSortingClass
+public class SelectionSort : IBaseSortingClass
 {
-    public override int[] Sort(int[] arrayToSort)
+    public int[] Sort(int[] arrayToSort)
     {
         
         for (int i = 0; i < arrayToSort.Length; i++)

@@ -1,8 +1,8 @@
 ﻿namespace SortingAlgorythms;
 
-public class InsertionSort : BaseSortingClass
+public class InsertionSort : IBaseSortingClass
 {
-    public override int[] Sort(int[] array)
+    public int[] Sort(int[] array)
     {
         int n = array.Length;
         for (int i = 1; i < n; i++)

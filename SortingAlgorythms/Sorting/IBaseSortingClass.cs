@@ -1,6 +1,6 @@
 ﻿namespace SortingAlgorythms;
 
-public abstract class BaseSortingClass
+public interface IBaseSortingClass
 {
     public abstract int[] Sort(int[] arrayToSort);
 }

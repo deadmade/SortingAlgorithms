@@ -1,23 +1,35 @@
-﻿namespace SortingAlgorythms;
+﻿using System;
+using System.Linq;
+using System.Reflection;
 
-class Program
+namespace SortingAlgorythms
 {
-    private static Random _random = new Random();
-    static void Main(string[] args)
+    public class Program
     {
-        var length = 10;
-        var arryToSort = new int[length];
-        for (int i = 0; i < length; i++)
+        public static void Main(string[] args)
         {
-            arryToSort[i]= _random.Next(1, length); 
-        }
+            var random = new Random();
+            int[] arrayToSort = new int[20];
+            for (int i = 0; i < 20; i++)
+            {
+                arrayToSort[i] = random.Next(0, 100);
+            }
 
-        var sageArray = arryToSort.Where(x => x.ToString() != string.Empty).Select(x => x).ToArray();
-        var sort = new SelectionSort().Sort(arryToSort);
-        for (int i = 0; i < length; i++)
-        {
-            Console.WriteLine($"Before:{sageArray[i]} | After: {sort[i]}");
+            var sortingAlgorithmType = typeof(IBaseSortingClass);
+            var sortingAlgorithmInstances = Assembly.GetExecutingAssembly()
+                .GetTypes()
+                .Where(t => sortingAlgorithmType.IsAssignableFrom(t) && !t.IsInterface && !t.IsAbstract)
+                .Select(t => Activator.CreateInstance(t) as IBaseSortingClass)
+                .ToList();
+
+            foreach (var sortingAlgorithm in sortingAlgorithmInstances)
+            {
+                Console.WriteLine("--------------------------------------------------");
+                Console.WriteLine("Executing sorting algorithm: " + sortingAlgorithm.GetType().Name);
+                Console.WriteLine($"Original: {string.Join(", ", arrayToSort)}");
+                var sortedArray = sortingAlgorithm.Sort((int[])arrayToSort.Clone());
+                Console.WriteLine($"{sortingAlgorithm.GetType().Name}: {string.Join(", ", sortedArray)}");
+            }
         }
-        
     }
 }
