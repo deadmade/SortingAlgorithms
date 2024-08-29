@@ -4,11 +4,11 @@ public class InsertionSort : IBaseSortingClass
 {
     public int[] Sort(int[] array)
     {
-        int n = array.Length;
-        for (int i = 1; i < n; i++)
+        var n = array.Length;
+        for (var i = 1; i < n; i++)
         {
-            int key = array[i];
-            int j = i - 1;
+            var key = array[i];
+            var j = i - 1;
 
             // Verschieben der Elemente
             while (j >= 0 && array[j] > key)
@@ -16,6 +16,7 @@ public class InsertionSort : IBaseSortingClass
                 array[j + 1] = array[j];
                 j--;
             }
+
             array[j + 1] = key;
         }
 

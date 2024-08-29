@@ -4,17 +4,12 @@ public class SelectionSort : IBaseSortingClass
 {
     public int[] Sort(int[] arrayToSort)
     {
-        
-        for (int i = 0; i < arrayToSort.Length; i++)
+        for (var i = 0; i < arrayToSort.Length; i++)
         {
             var currentSmallestIndex = i;
-            for (int j = i; j < arrayToSort.Length; j++)
-            {
+            for (var j = i; j < arrayToSort.Length; j++)
                 if (arrayToSort[j] < arrayToSort[currentSmallestIndex])
-                {
                     currentSmallestIndex = j;
-                }
-            }
 
             var swapValue = arrayToSort[currentSmallestIndex];
             arrayToSort[currentSmallestIndex] = arrayToSort[i];

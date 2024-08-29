@@ -2,5 +2,5 @@
 
 public interface IBaseSortingClass
 {
-    public abstract int[] Sort(int[] arrayToSort);
+    public int[] Sort(int[] arrayToSort);
 }
