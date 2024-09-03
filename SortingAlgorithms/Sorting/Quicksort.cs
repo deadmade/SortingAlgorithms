@@ -13,31 +13,35 @@ public class Quicksort : IBaseSortingClass
     {
         if (low < high)
         {
-            var pivotIndex = Partition(array, low, high);
-            QuickSort(array, low, pivotIndex - 1);
-            QuickSort(array, pivotIndex + 1, high);
+            var pivodIndex = Pivod(array, low, high);
+            QuickSort(array, low, pivodIndex-1);
+            QuickSort(array, pivodIndex+1, high);
         }
     }
 
-    private static int Partition(int[] array, int low, int high)
+    private static int Pivod(int[] array, int low, int high)
     {
         var pivot = array[high];
-        var i = low - 1;
-
-        for (var j = low; j < high; j++)
-            if (array[j] < pivot)
+        int g = low;
+        
+        for (int i = low; i < high; i++)
+        {
+            if (array[i] < pivot)
             {
-                i++;
-                Swap(array, i, j);
+                Swap(array, i, g);
+
+                g++;
             }
+        }
 
-        Swap(array, i + 1, high);
-        return i + 1;
+        Swap(array, g, high);
+        return g;
+
     }
-
-    private static void Swap(int[] array, int a, int b)
+    
+    static void Swap(int[] array, int a, int b)
     {
-        var temp = array[a];
+        int temp = array[a];
         array[a] = array[b];
         array[b] = temp;
     }

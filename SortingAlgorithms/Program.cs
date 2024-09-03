@@ -4,7 +4,7 @@ namespace SortingAlgorythms;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         var random = new Random();
         var arrayToSort = new int[20];

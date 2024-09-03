@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{79DFCDE6-731D-45DB-B36E-F2C4CB30E78B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStructure\DataStructure.csproj", "{713E9AD0-C7FD-47F1-9395-2BA85A0AD8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeOptimization", "CodeOptimization\CodeOptimization.csproj", "{A87A24FB-EB40-4109-AE9C-80C50684D612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79DFCDE6-731D-45DB-B36E-F2C4CB30E78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DFCDE6-731D-45DB-B36E-F2C4CB30E78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DFCDE6-731D-45DB-B36E-F2C4CB30E78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DFCDE6-731D-45DB-B36E-F2C4CB30E78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713E9AD0-C7FD-47F1-9395-2BA85A0AD8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713E9AD0-C7FD-47F1-9395-2BA85A0AD8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713E9AD0-C7FD-47F1-9395-2BA85A0AD8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713E9AD0-C7FD-47F1-9395-2BA85A0AD8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A87A24FB-EB40-4109-AE9C-80C50684D612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A87A24FB-EB40-4109-AE9C-80C50684D612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A87A24FB-EB40-4109-AE9C-80C50684D612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A87A24FB-EB40-4109-AE9C-80C50684D612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
