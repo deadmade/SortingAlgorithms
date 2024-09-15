@@ -6,11 +6,11 @@ public class BubbleSort : IBaseSortingClass
     {
         for (var i = 0; i < arrayToSort.Length-1; i++)
         for (var j = 0; j < arrayToSort.Length-i-1; j++)
-            if (arrayToSort[i] < arrayToSort[j])
+            if (arrayToSort[j] > arrayToSort[j+1])
             {
                 var nextValue = arrayToSort[j];
-                arrayToSort[j] = arrayToSort[i];
-                arrayToSort[i] = nextValue;
+                arrayToSort[j] = arrayToSort[j+1];
+                arrayToSort[j+1] = nextValue;
             }
 
         return arrayToSort;
