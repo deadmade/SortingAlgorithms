@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeOptimization", "CodeOptimization\CodeOptimization.csproj", "{A87A24FB-EB40-4109-AE9C-80C50684D612}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaulAleynaExcercise", "PaulAleynaExcercise\PaulAleynaExcercise.csproj", "{81157A73-A0FB-4B6A-804F-D81645C8FBE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A87A24FB-EB40-4109-AE9C-80C50684D612}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A87A24FB-EB40-4109-AE9C-80C50684D612}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A87A24FB-EB40-4109-AE9C-80C50684D612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81157A73-A0FB-4B6A-804F-D81645C8FBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81157A73-A0FB-4B6A-804F-D81645C8FBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81157A73-A0FB-4B6A-804F-D81645C8FBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81157A73-A0FB-4B6A-804F-D81645C8FBE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
