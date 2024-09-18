@@ -49,5 +49,12 @@ class Program
         // und für Cat die Methode der abgeleiteten Klasse
         animal.Eat();
         cat.Eat();
+        
+        
+        Cat a = new Cat("Minka", 3, "black");
+        Cat b = new Cat("Mauzi", 4, "green");
+        
+        var superCat = a + b;
+        Console.WriteLine(superCat.Name);
     }
 }

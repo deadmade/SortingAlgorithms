@@ -29,4 +29,9 @@ public class Cat : Animal
     {
         Console.WriteLine("Cat is sleeping");
     }
+    
+    public static Cat operator +(Cat a, Cat b)
+    {
+        return new Cat(a.Name + b.Name, a.Age + b.Age, a.Color + b.Color);
+    }
 }
